@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DA66ABAC25D7CDF884876E490A5C3539"
-               BuildableName = "Material-com.cosmicmind.material.fonts.bundle"
+               BuildableName = "com.cosmicmind.material.fonts.bundle"
                BlueprintName = "Material-com.cosmicmind.material.fonts"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
