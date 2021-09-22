@@ -1,0 +1,6 @@
+framework module Pods_EjecucionNomina {
+  umbrella header "Pods-EjecucionNomina-umbrella.h"
+
+  export *
+  module * { export * }
+}
