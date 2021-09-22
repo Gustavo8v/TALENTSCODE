@@ -7,11 +7,36 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-
+class HomeViewController: BaseViewController {
+    
+    @IBOutlet private weak var staffButton: UIButton!
+    @IBOutlet private weak var addDepartment: UIButton!
+    @IBOutlet private weak var addStaff: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        prepareUI()
     }
-
+    
+    func prepareUI(){
+        staffButton.setCornerRadius(corner: 16)
+        addDepartment.setCornerRadius(corner: 16)
+        addStaff.setCornerRadius(corner: 16)
+    }
+    
+    @IBAction func onClickAddStaff(_ sender: Any) {
+        let vc = NewStaffViewController()
+        popViewController(view: vc)
+    }
+    
+    @IBAction func onClickAddDepartments(_ sender: Any) {
+        let vc = DepartmentsViewController()
+        popViewController(view: vc)
+    }
+    
+    @IBAction func onClickGoStaff(_ sender: Any) {
+        let vc = StaffViewController()
+        popViewController(view: vc)
+    }
+    
 }

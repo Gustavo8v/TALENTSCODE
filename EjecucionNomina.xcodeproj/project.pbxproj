@@ -10,6 +10,14 @@
 		72DEECA726FB99BE00BA46F6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 72DEECA626FB99BE00BA46F6 /* RealmSwift */; };
 		72DEECAE26FB9B0D00BA46F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEECAC26FB9B0D00BA46F6 /* HomeViewController.swift */; };
 		72DEECAF26FB9B0D00BA46F6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DEECAD26FB9B0D00BA46F6 /* HomeViewController.xib */; };
+		72DEECB226FBB8EB00BA46F6 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEECB126FBB8EB00BA46F6 /* UIButtonExtension.swift */; };
+		72DEECB526FBB95100BA46F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEECB426FBB95100BA46F6 /* BaseViewController.swift */; };
+		72DEECC126FBBBA800BA46F6 /* DepartmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEECBF26FBBBA800BA46F6 /* DepartmentsViewController.swift */; };
+		72DEECC226FBBBA800BA46F6 /* DepartmentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DEECC026FBBBA800BA46F6 /* DepartmentsViewController.xib */; };
+		72DEECC526FBBBB700BA46F6 /* StaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEECC326FBBBB700BA46F6 /* StaffViewController.swift */; };
+		72DEECC626FBBBB700BA46F6 /* StaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DEECC426FBBBB700BA46F6 /* StaffViewController.xib */; };
+		72DEECC926FBBBC700BA46F6 /* NewStaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEECC726FBBBC700BA46F6 /* NewStaffViewController.swift */; };
+		72DEECCA26FBBBC700BA46F6 /* NewStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DEECC826FBBBC700BA46F6 /* NewStaffViewController.xib */; };
 		72FB805626FB86FF00ED03B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB805526FB86FF00ED03B5 /* AppDelegate.swift */; };
 		72FB805826FB86FF00ED03B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB805726FB86FF00ED03B5 /* SceneDelegate.swift */; };
 		72FB805A26FB86FF00ED03B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB805926FB86FF00ED03B5 /* ViewController.swift */; };
@@ -22,6 +30,14 @@
 		43CAFF76B93CABFC4C08CA9D /* Pods_EjecucionNomina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EjecucionNomina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72DEECAC26FB9B0D00BA46F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		72DEECAD26FB9B0D00BA46F6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		72DEECB126FBB8EB00BA46F6 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		72DEECB426FBB95100BA46F6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		72DEECBF26FBBBA800BA46F6 /* DepartmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentsViewController.swift; sourceTree = "<group>"; };
+		72DEECC026FBBBA800BA46F6 /* DepartmentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepartmentsViewController.xib; sourceTree = "<group>"; };
+		72DEECC326FBBBB700BA46F6 /* StaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffViewController.swift; sourceTree = "<group>"; };
+		72DEECC426FBBBB700BA46F6 /* StaffViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaffViewController.xib; sourceTree = "<group>"; };
+		72DEECC726FBBBC700BA46F6 /* NewStaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStaffViewController.swift; sourceTree = "<group>"; };
+		72DEECC826FBBBC700BA46F6 /* NewStaffViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewStaffViewController.xib; sourceTree = "<group>"; };
 		72FB805226FB86FF00ED03B5 /* EjecucionNomina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjecucionNomina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FB805526FB86FF00ED03B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72FB805726FB86FF00ED03B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +74,9 @@
 		72DEECA826FB9AC200BA46F6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				72DEECB826FBBAFB00BA46F6 /* AddStaff */,
+				72DEECB726FBBAF200BA46F6 /* Staff */,
+				72DEECB626FBBAE100BA46F6 /* Departments */,
 				72DEECA926FB9AD000BA46F6 /* Home */,
 			);
 			path = Modules;
@@ -88,6 +107,97 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		72DEECB026FBB8D600BA46F6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				72DEECB126FBB8EB00BA46F6 /* UIButtonExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		72DEECB326FBB93F00BA46F6 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				72DEECB426FBB95100BA46F6 /* BaseViewController.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		72DEECB626FBBAE100BA46F6 /* Departments */ = {
+			isa = PBXGroup;
+			children = (
+				72DEECBA26FBBB1000BA46F6 /* View */,
+				72DEECB926FBBB0800BA46F6 /* Presenter */,
+			);
+			path = Departments;
+			sourceTree = "<group>";
+		};
+		72DEECB726FBBAF200BA46F6 /* Staff */ = {
+			isa = PBXGroup;
+			children = (
+				72DEECBC26FBBB4A00BA46F6 /* View */,
+				72DEECBB26FBBB3700BA46F6 /* Presenter */,
+			);
+			path = Staff;
+			sourceTree = "<group>";
+		};
+		72DEECB826FBBAFB00BA46F6 /* AddStaff */ = {
+			isa = PBXGroup;
+			children = (
+				72DEECBE26FBBB5800BA46F6 /* View */,
+				72DEECBD26FBBB5100BA46F6 /* Presenter */,
+			);
+			path = AddStaff;
+			sourceTree = "<group>";
+		};
+		72DEECB926FBBB0800BA46F6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		72DEECBA26FBBB1000BA46F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72DEECBF26FBBBA800BA46F6 /* DepartmentsViewController.swift */,
+				72DEECC026FBBBA800BA46F6 /* DepartmentsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72DEECBB26FBBB3700BA46F6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		72DEECBC26FBBB4A00BA46F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72DEECC326FBBBB700BA46F6 /* StaffViewController.swift */,
+				72DEECC426FBBBB700BA46F6 /* StaffViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72DEECBD26FBBB5100BA46F6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		72DEECBE26FBBB5800BA46F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72DEECC726FBBBC700BA46F6 /* NewStaffViewController.swift */,
+				72DEECC826FBBBC700BA46F6 /* NewStaffViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		72FB804926FB86FF00ED03B5 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +219,8 @@
 		72FB805426FB86FF00ED03B5 /* EjecucionNomina */ = {
 			isa = PBXGroup;
 			children = (
+				72DEECB326FBB93F00BA46F6 /* Commons */,
+				72DEECB026FBB8D600BA46F6 /* Extension */,
 				72DEECA826FB9AC200BA46F6 /* Modules */,
 				72FB805526FB86FF00ED03B5 /* AppDelegate.swift */,
 				72FB805726FB86FF00ED03B5 /* SceneDelegate.swift */,
@@ -193,6 +305,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72DEECC226FBBBA800BA46F6 /* DepartmentsViewController.xib in Resources */,
+				72DEECC626FBBBB700BA46F6 /* StaffViewController.xib in Resources */,
+				72DEECCA26FBBBC700BA46F6 /* NewStaffViewController.xib in Resources */,
 				72FB806226FB870000ED03B5 /* LaunchScreen.storyboard in Resources */,
 				72FB805F26FB870000ED03B5 /* Assets.xcassets in Resources */,
 				72DEECAF26FB9B0D00BA46F6 /* HomeViewController.xib in Resources */,
@@ -249,9 +364,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				72FB805A26FB86FF00ED03B5 /* ViewController.swift in Sources */,
+				72DEECC926FBBBC700BA46F6 /* NewStaffViewController.swift in Sources */,
+				72DEECB226FBB8EB00BA46F6 /* UIButtonExtension.swift in Sources */,
 				72FB805626FB86FF00ED03B5 /* AppDelegate.swift in Sources */,
 				72FB805826FB86FF00ED03B5 /* SceneDelegate.swift in Sources */,
 				72DEECAE26FB9B0D00BA46F6 /* HomeViewController.swift in Sources */,
+				72DEECC126FBBBA800BA46F6 /* DepartmentsViewController.swift in Sources */,
+				72DEECB526FBB95100BA46F6 /* BaseViewController.swift in Sources */,
+				72DEECC526FBBBB700BA46F6 /* StaffViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
