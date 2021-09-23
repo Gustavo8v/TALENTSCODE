@@ -7,4 +7,5 @@ target 'EjecucionNomina' do
 
   # Pods for EjecucionNomina
   pod 'Material'
+  pod 'NotificationBannerSwift'
 end

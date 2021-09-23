@@ -1,3 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-EjecucionNomina/Pods-EjecucionNomina-frameworks.sh
+${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework
 ${BUILT_PRODUCTS_DIR}/Material/Material.framework
 ${BUILT_PRODUCTS_DIR}/Motion/Motion.framework
+${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
