@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import NotificationBannerSwift
 
 class HomeViewController: BaseViewController {
     
@@ -43,6 +44,6 @@ class HomeViewController: BaseViewController {
 
 extension HomeViewController: NewStaffViewControllerDelegate {
     func showSuccessFull() {
-        print("asdfgh")
+        NotificationBanner(title: "¡Guardado!", subtitle: "los datos del nuevo empleado se han guardado con éxito", style: .success).show()
     }
 }

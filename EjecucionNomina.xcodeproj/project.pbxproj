@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7209E0F426FC1CE600504C00 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7209E0F326FC1CE500504C00 /* TextFieldExtension.swift */; };
+		7209E0F626FC28FC00504C00 /* StaffPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7209E0F526FC28FC00504C00 /* StaffPresenter.swift */; };
+		7209E0FA26FC2A1A00504C00 /* StaffDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7209E0F826FC2A1A00504C00 /* StaffDetailTableViewCell.swift */; };
+		7209E0FB26FC2A1A00504C00 /* StaffDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7209E0F926FC2A1A00504C00 /* StaffDetailTableViewCell.xib */; };
+		7209E0FD26FC3B8D00504C00 /* DepartmentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7209E0FC26FC3B8D00504C00 /* DepartmentsModel.swift */; };
 		72DEECA726FB99BE00BA46F6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 72DEECA626FB99BE00BA46F6 /* RealmSwift */; };
 		72DEECAE26FB9B0D00BA46F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEECAC26FB9B0D00BA46F6 /* HomeViewController.swift */; };
 		72DEECAF26FB9B0D00BA46F6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DEECAD26FB9B0D00BA46F6 /* HomeViewController.xib */; };
@@ -32,6 +36,10 @@
 /* Begin PBXFileReference section */
 		43CAFF76B93CABFC4C08CA9D /* Pods_EjecucionNomina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EjecucionNomina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7209E0F326FC1CE500504C00 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		7209E0F526FC28FC00504C00 /* StaffPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffPresenter.swift; sourceTree = "<group>"; };
+		7209E0F826FC2A1A00504C00 /* StaffDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffDetailTableViewCell.swift; sourceTree = "<group>"; };
+		7209E0F926FC2A1A00504C00 /* StaffDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaffDetailTableViewCell.xib; sourceTree = "<group>"; };
+		7209E0FC26FC3B8D00504C00 /* DepartmentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentsModel.swift; sourceTree = "<group>"; };
 		72DEECAC26FB9B0D00BA46F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		72DEECAD26FB9B0D00BA46F6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		72DEECB126FBB8EB00BA46F6 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
@@ -75,6 +83,15 @@
 				FE66B7772A86CAD0882ECBF0 /* Pods-EjecucionNomina.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7209E0F726FC298500504C00 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7209E0F826FC2A1A00504C00 /* StaffDetailTableViewCell.swift */,
+				7209E0F926FC2A1A00504C00 /* StaffDetailTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		72DEECA826FB9AC200BA46F6 /* Modules */ = {
@@ -177,6 +194,7 @@
 		72DEECBB26FBBB3700BA46F6 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				7209E0F526FC28FC00504C00 /* StaffPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -184,6 +202,7 @@
 		72DEECBC26FBBB4A00BA46F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7209E0F726FC298500504C00 /* Cell */,
 				72DEECC326FBBBB700BA46F6 /* StaffViewController.swift */,
 				72DEECC426FBBBB700BA46F6 /* StaffViewController.xib */,
 			);
@@ -211,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				72DEECCC26FBF64A00BA46F6 /* StaffData.swift */,
+				7209E0FC26FC3B8D00504C00 /* DepartmentsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -323,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72DEECC226FBBBA800BA46F6 /* DepartmentsViewController.xib in Resources */,
+				7209E0FB26FC2A1A00504C00 /* StaffDetailTableViewCell.xib in Resources */,
 				72DEECC626FBBBB700BA46F6 /* StaffViewController.xib in Resources */,
 				72DEECCA26FBBBC700BA46F6 /* NewStaffViewController.xib in Resources */,
 				72FB806226FB870000ED03B5 /* LaunchScreen.storyboard in Resources */,
@@ -381,9 +402,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				72FB805A26FB86FF00ED03B5 /* ViewController.swift in Sources */,
+				7209E0F626FC28FC00504C00 /* StaffPresenter.swift in Sources */,
 				72DEECCF26FBFBC300BA46F6 /* NewStaffPresenter.swift in Sources */,
 				72DEECC926FBBBC700BA46F6 /* NewStaffViewController.swift in Sources */,
 				72DEECB226FBB8EB00BA46F6 /* UIButtonExtension.swift in Sources */,
+				7209E0FD26FC3B8D00504C00 /* DepartmentsModel.swift in Sources */,
+				7209E0FA26FC2A1A00504C00 /* StaffDetailTableViewCell.swift in Sources */,
 				72FB805626FB86FF00ED03B5 /* AppDelegate.swift in Sources */,
 				72DEECCD26FBF64A00BA46F6 /* StaffData.swift in Sources */,
 				72FB805826FB86FF00ED03B5 /* SceneDelegate.swift in Sources */,
@@ -531,6 +555,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DAPF2Z935;
 				INFOPLIST_FILE = EjecucionNomina/Info.plist;
@@ -540,6 +565,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gustavogutierrez.EjecucionNomina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -551,6 +577,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DAPF2Z935;
 				INFOPLIST_FILE = EjecucionNomina/Info.plist;
@@ -560,6 +587,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gustavogutierrez.EjecucionNomina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

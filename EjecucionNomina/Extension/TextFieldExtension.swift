@@ -18,4 +18,15 @@ extension TextField {
         self.placeholderActiveColor = .orange
         self.dividerActiveColor = .red
     }
+    
+    func isEnabbled(){
+        self.isEnabled = false
+        self.backgroundColor = .lightGray
+    }
+    
+    
+    
+    @objc func roundCorners(radius: CGFloat) {
+        self.layer.cornerRadius = radius
+    }
 }
