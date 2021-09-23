@@ -158,7 +158,7 @@ class NewStaffViewController: BaseViewController {
                                department: department)
             presenter.editDepartment(deparment: department, salary: totalSalary.description)
             dismiss(animated: true) {
-                self.delegate?.showSuccessFull(newStaff: false)
+                self.delegate?.showSuccessFull(newStaff: true)
             }
         } else {
             self.showAlertController(title: "", message: "El Departamento introducido no coincide con ningún área de anteriores registros, ¿Desea agregar un nuevo Departamento?", addCancel: true) { action in
@@ -171,7 +171,7 @@ class NewStaffViewController: BaseViewController {
                                         department: department)
                 self.presenter.newDepartment(department: department, salary: salary)
                 self.dismiss(animated: true) {
-                    self.delegate?.showSuccessFull(newStaff: false)
+                    self.delegate?.showSuccessFull(newStaff: true)
                 }
             }
         }
@@ -212,7 +212,7 @@ class NewStaffViewController: BaseViewController {
                                 salary: salary,
                                 department: department)
             dismiss(animated: true) {
-                self.delegate?.showSuccessFull(newStaff: true)
+                self.delegate?.showSuccessFull(newStaff: false)
             }
         } else {
             self.showAlertController(title: "", message: "El Departamento introducido no coincide con ningún área de anteriores registros, ¿Desea agregar un nuevo Departamento?", addCancel: true) { action in
@@ -225,7 +225,7 @@ class NewStaffViewController: BaseViewController {
                                          department: department)
                 self.presenter.newDepartment(department: department, salary: salary)
                 self.dismiss(animated: true) {
-                    self.delegate?.showSuccessFull(newStaff: true)
+                    self.delegate?.showSuccessFull(newStaff: false)
                 }
             }
         }
