@@ -31,4 +31,23 @@ class BaseViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true, completion: nil)
     }
+    
+    func showAlertController(title:String, message:String, buttons: [UIAlertAction] = [], addContinue: Bool = true, continueHandler: ((UIAlertAction) -> Void)? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        for button in buttons {
+            alert.addAction(button)
+        }
+        if addContinue {
+            alert.addAction(UIAlertAction(title: "Continuar", style: UIAlertAction.Style.default, handler: continueHandler))
+        }
+        alert.view.tintColor = .orange
+        present(alert, animated:  true)
+    }
+}
+
+extension BaseViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

@@ -26,6 +26,7 @@ class HomeViewController: BaseViewController {
     
     @IBAction func onClickAddStaff(_ sender: Any) {
         let vc = NewStaffViewController()
+        vc.delegate = self
         popViewController(view: vc)
     }
     
@@ -38,5 +39,10 @@ class HomeViewController: BaseViewController {
         let vc = StaffViewController()
         popViewController(view: vc)
     }
-    
+}
+
+extension HomeViewController: NewStaffViewControllerDelegate {
+    func showSuccessFull() {
+        print("asdfgh")
+    }
 }

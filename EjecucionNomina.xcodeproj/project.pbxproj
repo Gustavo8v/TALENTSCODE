@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7209E0F426FC1CE600504C00 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7209E0F326FC1CE500504C00 /* TextFieldExtension.swift */; };
 		72DEECA726FB99BE00BA46F6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 72DEECA626FB99BE00BA46F6 /* RealmSwift */; };
 		72DEECAE26FB9B0D00BA46F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEECAC26FB9B0D00BA46F6 /* HomeViewController.swift */; };
 		72DEECAF26FB9B0D00BA46F6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DEECAD26FB9B0D00BA46F6 /* HomeViewController.xib */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		43CAFF76B93CABFC4C08CA9D /* Pods_EjecucionNomina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EjecucionNomina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7209E0F326FC1CE500504C00 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 		72DEECAC26FB9B0D00BA46F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		72DEECAD26FB9B0D00BA46F6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		72DEECB126FBB8EB00BA46F6 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				72DEECB126FBB8EB00BA46F6 /* UIButtonExtension.swift */,
+				7209E0F326FC1CE500504C00 /* TextFieldExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				72FB805826FB86FF00ED03B5 /* SceneDelegate.swift in Sources */,
 				72DEECAE26FB9B0D00BA46F6 /* HomeViewController.swift in Sources */,
 				72DEECC126FBBBA800BA46F6 /* DepartmentsViewController.swift in Sources */,
+				7209E0F426FC1CE600504C00 /* TextFieldExtension.swift in Sources */,
 				72DEECB526FBB95100BA46F6 /* BaseViewController.swift in Sources */,
 				72DEECC526FBBBB700BA46F6 /* StaffViewController.swift in Sources */,
 			);

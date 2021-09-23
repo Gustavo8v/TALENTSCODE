@@ -3,24 +3,187 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewStaffViewController" customModule="EjecucionNomina" customModuleProvider="target">
             <connections>
+                <outlet property="addStaffButton" destination="BmM-uk-8yX" id="yiM-h6-bGZ"/>
+                <outlet property="addressSatff" destination="HB4-0h-RnB" id="PUU-bd-jOB"/>
+                <outlet property="cellPhoneStaff" destination="AI2-X0-fxO" id="qPa-KG-csK"/>
+                <outlet property="departmentStaff" destination="PFZ-Ag-cmJ" id="4u5-AV-eul"/>
+                <outlet property="lastNameStaff" destination="AyH-yr-rjs" id="QM4-lp-bwk"/>
+                <outlet property="nameStaff" destination="Lw4-jt-sjX" id="QmT-YL-nTa"/>
+                <outlet property="numberStaffTextField" destination="D1y-5V-fDI" id="hVV-MT-vyd"/>
+                <outlet property="salaryStaff" destination="hXm-2A-0YZ" id="1Ed-X5-hXn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRJ-qI-Fl5">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxV-rh-BsJ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newStaff" translatesAutoresizingMaskIntoConstraints="NO" id="DAE-rw-WOR">
+                                    <rect key="frame" x="207" y="386" width="207" height="414"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" secondItem="DAE-rw-WOR" secondAttribute="width" multiplier="2" id="k8f-Cz-FRh"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D1y-5V-fDI" customClass="TextField" customModule="Material">
+                                    <rect key="frame" x="41.5" y="102" width="331" height="49.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" secondItem="D1y-5V-fDI" secondAttribute="width" multiplier="0.15" id="3Lu-NM-3mq"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="No. de Empleado"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AyH-yr-rjs" customClass="TextField" customModule="Material">
+                                    <rect key="frame" x="41.5" y="301.5" width="331" height="49.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" secondItem="AyH-yr-rjs" secondAttribute="width" multiplier="0.15" id="600-Xq-Ty3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Apellidos"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HB4-0h-RnB" customClass="TextField" customModule="Material">
+                                    <rect key="frame" x="41.5" y="401" width="331" height="49.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" secondItem="HB4-0h-RnB" secondAttribute="width" multiplier="0.15" id="eyv-wH-szP"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Dirección"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AI2-X0-fxO" customClass="TextField" customModule="Material">
+                                    <rect key="frame" x="41.5" y="500.5" width="331" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" secondItem="AI2-X0-fxO" secondAttribute="width" multiplier="0.15" id="a1q-VK-jZv"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Número de Teléfono"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXm-2A-0YZ" customClass="TextField" customModule="Material">
+                                    <rect key="frame" x="41.5" y="600.5" width="331" height="49.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" secondItem="hXm-2A-0YZ" secondAttribute="width" multiplier="0.15" id="a9o-XP-PTN"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Salario (Quincenal)"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFZ-Ag-cmJ" customClass="TextField" customModule="Material">
+                                    <rect key="frame" x="41.5" y="700" width="331" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" secondItem="PFZ-Ag-cmJ" secondAttribute="width" multiplier="0.15" id="L0Y-VR-3eG"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Departamento"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lw4-jt-sjX" customClass="TextField" customModule="Material">
+                                    <rect key="frame" x="41.5" y="201.5" width="331" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" secondItem="Lw4-jt-sjX" secondAttribute="width" multiplier="0.15" id="fkm-Uv-y3i"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Nombre"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmM-uk-8yX">
+                                    <rect key="frame" x="41.5" y="800" width="331" height="66"/>
+                                    <color key="backgroundColor" red="0.91980725529999996" green="0.41112484539999999" blue="0.23879369650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" secondItem="BmM-uk-8yX" secondAttribute="width" multiplier="0.2" id="Ifn-6R-Evr"/>
+                                    </constraints>
+                                    <state key="normal" title="Agregar">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onClickAddStaff:" destination="-1" eventType="touchUpInside" id="jPo-rs-uyP"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="HB4-0h-RnB" firstAttribute="width" secondItem="rxV-rh-BsJ" secondAttribute="width" multiplier="0.8" id="0NJ-2B-Nna"/>
+                                <constraint firstItem="AI2-X0-fxO" firstAttribute="width" secondItem="rxV-rh-BsJ" secondAttribute="width" multiplier="0.8" id="1fL-fn-4sh"/>
+                                <constraint firstItem="DAE-rw-WOR" firstAttribute="width" secondItem="rxV-rh-BsJ" secondAttribute="width" multiplier="0.5" id="1nB-vu-YLm"/>
+                                <constraint firstItem="PFZ-Ag-cmJ" firstAttribute="top" secondItem="hXm-2A-0YZ" secondAttribute="bottom" constant="50" id="6er-ir-xFG"/>
+                                <constraint firstItem="PFZ-Ag-cmJ" firstAttribute="centerX" secondItem="rxV-rh-BsJ" secondAttribute="centerX" id="8gS-ic-v9P"/>
+                                <constraint firstItem="Lw4-jt-sjX" firstAttribute="centerX" secondItem="rxV-rh-BsJ" secondAttribute="centerX" id="9fA-gS-njl"/>
+                                <constraint firstItem="AI2-X0-fxO" firstAttribute="centerX" secondItem="rxV-rh-BsJ" secondAttribute="centerX" id="BNv-bl-DDu"/>
+                                <constraint firstItem="AyH-yr-rjs" firstAttribute="centerX" secondItem="rxV-rh-BsJ" secondAttribute="centerX" id="BhJ-EM-yDT"/>
+                                <constraint firstItem="hXm-2A-0YZ" firstAttribute="width" secondItem="rxV-rh-BsJ" secondAttribute="width" multiplier="0.8" id="JMx-ue-7VG"/>
+                                <constraint firstItem="HB4-0h-RnB" firstAttribute="top" secondItem="AyH-yr-rjs" secondAttribute="bottom" constant="50" id="LPf-fC-6Bw"/>
+                                <constraint firstItem="Lw4-jt-sjX" firstAttribute="width" secondItem="rxV-rh-BsJ" secondAttribute="width" multiplier="0.8" id="Lc9-es-hgY"/>
+                                <constraint firstItem="Lw4-jt-sjX" firstAttribute="top" secondItem="D1y-5V-fDI" secondAttribute="bottom" constant="50" id="RMl-SX-Ce9"/>
+                                <constraint firstAttribute="trailing" secondItem="DAE-rw-WOR" secondAttribute="trailing" id="Scb-4k-TP3"/>
+                                <constraint firstItem="AyH-yr-rjs" firstAttribute="top" secondItem="Lw4-jt-sjX" secondAttribute="bottom" constant="50" id="Vnm-z0-Tsa"/>
+                                <constraint firstItem="PFZ-Ag-cmJ" firstAttribute="width" secondItem="rxV-rh-BsJ" secondAttribute="width" multiplier="0.8" id="Yf3-ZK-PK2"/>
+                                <constraint firstItem="BmM-uk-8yX" firstAttribute="top" secondItem="PFZ-Ag-cmJ" secondAttribute="bottom" constant="50" id="ZS8-VG-2q9"/>
+                                <constraint firstItem="AyH-yr-rjs" firstAttribute="width" secondItem="rxV-rh-BsJ" secondAttribute="width" multiplier="0.8" id="djL-he-92F"/>
+                                <constraint firstItem="D1y-5V-fDI" firstAttribute="centerX" secondItem="rxV-rh-BsJ" secondAttribute="centerX" id="gZ0-On-kIa"/>
+                                <constraint firstItem="D1y-5V-fDI" firstAttribute="top" secondItem="rxV-rh-BsJ" secondAttribute="topMargin" constant="50" id="jzd-FA-iiV"/>
+                                <constraint firstItem="hXm-2A-0YZ" firstAttribute="top" secondItem="AI2-X0-fxO" secondAttribute="bottom" constant="50" id="nKL-h2-xeS"/>
+                                <constraint firstItem="AI2-X0-fxO" firstAttribute="top" secondItem="HB4-0h-RnB" secondAttribute="bottom" constant="50" id="uM3-1R-PWm"/>
+                                <constraint firstItem="BmM-uk-8yX" firstAttribute="width" secondItem="rxV-rh-BsJ" secondAttribute="width" multiplier="0.8" id="ua5-vQ-9Ji"/>
+                                <constraint firstItem="BmM-uk-8yX" firstAttribute="centerX" secondItem="rxV-rh-BsJ" secondAttribute="centerX" id="vbe-lI-oRE"/>
+                                <constraint firstItem="BmM-uk-8yX" firstAttribute="top" secondItem="DAE-rw-WOR" secondAttribute="bottom" id="xxU-XG-MEK"/>
+                                <constraint firstItem="D1y-5V-fDI" firstAttribute="width" secondItem="rxV-rh-BsJ" secondAttribute="width" multiplier="0.8" id="zRY-zb-5AO"/>
+                                <constraint firstItem="hXm-2A-0YZ" firstAttribute="centerX" secondItem="rxV-rh-BsJ" secondAttribute="centerX" id="zf7-Y9-Hn8"/>
+                                <constraint firstItem="HB4-0h-RnB" firstAttribute="centerX" secondItem="rxV-rh-BsJ" secondAttribute="centerX" id="zrq-ot-3wt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rxV-rh-BsJ" firstAttribute="leading" secondItem="gRJ-qI-Fl5" secondAttribute="leading" id="8Iq-t4-ht2"/>
+                        <constraint firstItem="rxV-rh-BsJ" firstAttribute="width" secondItem="gRJ-qI-Fl5" secondAttribute="width" id="ApO-YI-iUV"/>
+                        <constraint firstItem="rxV-rh-BsJ" firstAttribute="top" secondItem="gRJ-qI-Fl5" secondAttribute="top" id="GhP-Xb-UwB"/>
+                        <constraint firstAttribute="bottom" secondItem="rxV-rh-BsJ" secondAttribute="bottom" id="Mcr-J1-srW"/>
+                        <constraint firstAttribute="trailing" secondItem="rxV-rh-BsJ" secondAttribute="trailing" id="enl-uK-J32"/>
+                        <constraint firstItem="rxV-rh-BsJ" firstAttribute="height" secondItem="gRJ-qI-Fl5" secondAttribute="height" priority="250" id="ipT-wB-HxY"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="SCc-1V-uaq"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gRJ-qI-Fl5" secondAttribute="bottom" id="FYP-Fi-Xyc"/>
+                <constraint firstAttribute="trailing" secondItem="gRJ-qI-Fl5" secondAttribute="trailing" id="Sd7-Wu-BzA"/>
+                <constraint firstItem="gRJ-qI-Fl5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VSC-LE-KgG"/>
+                <constraint firstItem="gRJ-qI-Fl5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wde-bJ-nee"/>
+            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
         </view>
     </objects>
     <resources>
+        <image name="newStaff" width="85" height="85"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
