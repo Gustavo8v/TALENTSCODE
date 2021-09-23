@@ -28,6 +28,12 @@ class BaseViewController: UIViewController {
         navigationItem.leftBarButtonItem = doneItem
     }
     
+    func actionButton(title: String) {
+        let doneItem = UIBarButtonItem(title: title, style: UIBarButtonItem.Style.done, target: self, action: #selector(popView))
+        doneItem.tintColor = .orange
+        navigationItem.rightBarButtonItem = doneItem
+    }
+    
     @objc func popView (){
         self.navigationController?.popViewController(animated: true)
     }

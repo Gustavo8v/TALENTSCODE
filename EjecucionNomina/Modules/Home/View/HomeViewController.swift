@@ -43,7 +43,9 @@ class HomeViewController: BaseViewController {
 }
 
 extension HomeViewController: NewStaffViewControllerDelegate {
-    func showSuccessFull() {
-        NotificationBanner(title: "¡Guardado!", subtitle: "los datos del nuevo empleado se han guardado con éxito", style: .success).show()
+    func showSuccessFull(newStaff: Bool) {
+        NotificationBanner(title: newStaff ? "¡Guardado!" : "¡Actualizado!",
+                           subtitle: newStaff ? "Los datos del nuevo empleado se han guardado con éxito" : "Los datos del nuevo empleado se han actualizado con éxito",
+                           style: .success).show()
     }
 }

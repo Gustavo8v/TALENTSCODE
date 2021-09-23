@@ -24,6 +24,11 @@ extension TextField {
         self.backgroundColor = .lightGray
     }
     
+    func editText(){
+        self.isEnabled = true
+        self.backgroundColor = .clear
+    }
+    
     
     
     @objc func roundCorners(radius: CGFloat) {

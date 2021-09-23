@@ -47,4 +47,17 @@ class NewStaffPresenter{
             editDepartment?.salary = salary
         }
     }
+    
+    func editStaff(numberStaff: String, name: String, lastName: String, address: String, cellPhone: String, salary: String, department: String){
+        let editStaff = staffData.filter("numberStaff == '\(numberStaff)'").first
+        try! realm.write{
+            editStaff?.numberStaff = numberStaff
+            editStaff?.name = name
+            editStaff?.lastName = lastName
+            editStaff?.address = address
+            editStaff?.telephoneNumber = cellPhone
+            editStaff?.salary = salary
+            editStaff?.department = department
+        }
+    }
 }
