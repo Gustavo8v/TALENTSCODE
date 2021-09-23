@@ -80,6 +80,7 @@ class NewStaffViewController: BaseViewController {
         departmentStaff.roundCorners(radius: corner)
         numberStaffTextField.prepareStyles()
         textFieldShouldReturn(numberStaffTextField)
+        numberStaffTextField.keyboardType = .asciiCapableNumberPad
         nameStaff.prepareStyles()
         textFieldShouldReturn(nameStaff)
         lastNameStaff.prepareStyles()
@@ -88,6 +89,7 @@ class NewStaffViewController: BaseViewController {
         textFieldShouldReturn(addressSatff)
         cellPhoneStaff.prepareStyles()
         textFieldShouldReturn(cellPhoneStaff)
+        cellPhoneStaff.keyboardType = .asciiCapableNumberPad
         salaryStaff.prepareStyles()
         textFieldShouldReturn(salaryStaff)
         departmentStaff.prepareStyles()
