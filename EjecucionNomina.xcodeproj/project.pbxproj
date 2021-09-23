@@ -12,6 +12,7 @@
 		7209E0FA26FC2A1A00504C00 /* StaffDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7209E0F826FC2A1A00504C00 /* StaffDetailTableViewCell.swift */; };
 		7209E0FB26FC2A1A00504C00 /* StaffDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7209E0F926FC2A1A00504C00 /* StaffDetailTableViewCell.xib */; };
 		7209E0FD26FC3B8D00504C00 /* DepartmentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7209E0FC26FC3B8D00504C00 /* DepartmentsModel.swift */; };
+		7209E0FF26FC496000504C00 /* DepartmentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7209E0FE26FC496000504C00 /* DepartmentsPresenter.swift */; };
 		72DEECA726FB99BE00BA46F6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 72DEECA626FB99BE00BA46F6 /* RealmSwift */; };
 		72DEECAE26FB9B0D00BA46F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEECAC26FB9B0D00BA46F6 /* HomeViewController.swift */; };
 		72DEECAF26FB9B0D00BA46F6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DEECAD26FB9B0D00BA46F6 /* HomeViewController.xib */; };
@@ -40,6 +41,7 @@
 		7209E0F826FC2A1A00504C00 /* StaffDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffDetailTableViewCell.swift; sourceTree = "<group>"; };
 		7209E0F926FC2A1A00504C00 /* StaffDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaffDetailTableViewCell.xib; sourceTree = "<group>"; };
 		7209E0FC26FC3B8D00504C00 /* DepartmentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentsModel.swift; sourceTree = "<group>"; };
+		7209E0FE26FC496000504C00 /* DepartmentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentsPresenter.swift; sourceTree = "<group>"; };
 		72DEECAC26FB9B0D00BA46F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		72DEECAD26FB9B0D00BA46F6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		72DEECB126FBB8EB00BA46F6 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		72DEECB926FBBB0800BA46F6 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				7209E0FE26FC496000504C00 /* DepartmentsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				7209E0F626FC28FC00504C00 /* StaffPresenter.swift in Sources */,
 				72DEECCF26FBFBC300BA46F6 /* NewStaffPresenter.swift in Sources */,
 				72DEECC926FBBBC700BA46F6 /* NewStaffViewController.swift in Sources */,
+				7209E0FF26FC496000504C00 /* DepartmentsPresenter.swift in Sources */,
 				72DEECB226FBB8EB00BA46F6 /* UIButtonExtension.swift in Sources */,
 				7209E0FD26FC3B8D00504C00 /* DepartmentsModel.swift in Sources */,
 				7209E0FA26FC2A1A00504C00 /* StaffDetailTableViewCell.swift in Sources */,
