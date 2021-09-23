@@ -12,6 +12,7 @@ class DepartmentsViewController: BaseViewController {
     @IBOutlet weak var departmentsTable: UITableView!
     
     var presenter = DepartmentsPresenter()
+    var delegate: NewStaffViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,9 +51,16 @@ extension DepartmentsViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexDeparment = presenter.departmentData[indexPath.row]
         let vc = StaffViewController()
+        vc.delegate = self
         vc.departmentName = indexDeparment.department
         vc.isDepartment = true
         vc.configureViewDepartment()
         navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension DepartmentsViewController: NewStaffViewControllerDelegate {
+    func showSuccessFull(newStaff: Bool) {
+        delegate?.showSuccessFull(newStaff: newStaff)
     }
 }

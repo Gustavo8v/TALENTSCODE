@@ -33,11 +33,13 @@ class HomeViewController: BaseViewController {
     
     @IBAction func onClickAddDepartments(_ sender: Any) {
         let vc = DepartmentsViewController()
+        vc.delegate = self
         popViewController(view: vc)
     }
     
     @IBAction func onClickGoStaff(_ sender: Any) {
         let vc = StaffViewController()
+        vc.delegate = self
         popViewController(view: vc)
     }
 }

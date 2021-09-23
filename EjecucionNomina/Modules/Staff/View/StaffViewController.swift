@@ -16,6 +16,7 @@ class StaffViewController: BaseViewController {
     var isDepartment: Bool?
     var departmentName: String?
     var arrayDepartment: [StaffDataModel] = []
+    var delegate: NewStaffViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +74,14 @@ extension StaffViewController: UITableViewDelegate, UITableViewDataSource {
         let dataIndex = (isDepartment ?? false) ? arrayDepartment[indexPath.row] : presenter.staffData[indexPath.row]
         let vc = NewStaffViewController()
         vc.viewStaff = true
+        vc.delegate = self
         vc.detailStaffView(data: dataIndex)
         navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension StaffViewController: NewStaffViewControllerDelegate{
+    func showSuccessFull(newStaff: Bool) {
+        delegate?.showSuccessFull(newStaff: newStaff)
     }
 }
