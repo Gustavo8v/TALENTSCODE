@@ -15,7 +15,7 @@ class StaffViewController: BaseViewController {
     var presenter = StaffPresenter()
     var isDepartment: Bool?
     var departmentName: String?
-    var arrayDepartment: [StaffData] = []
+    var arrayDepartment: [StaffDataModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()

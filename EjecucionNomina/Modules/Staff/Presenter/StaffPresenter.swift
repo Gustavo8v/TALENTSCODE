@@ -10,10 +10,10 @@ import RealmSwift
 
 class StaffPresenter {
     
-    var staffData = try! Realm().objects(StaffData.self)
+    var staffData = try! Realm().objects(StaffDataModel.self)
+    let realm = try! Realm()
     
-    func deteleStaff(staff: StaffData, table: UITableView){
-        let realm = try! Realm()
+    func deteleStaff(staff: StaffDataModel, table: UITableView){
         try! realm.write{
             realm.delete(staff)
         }

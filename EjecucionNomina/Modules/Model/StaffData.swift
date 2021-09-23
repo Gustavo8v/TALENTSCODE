@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class StaffData: Object{
+class StaffDataModel: Object{
     @objc dynamic var numberStaff = ""
     @objc dynamic var name = ""
     @objc dynamic var lastName = ""

@@ -32,7 +32,7 @@ class NewStaffViewController: BaseViewController {
         prepareUI()
     }
     
-    func detailStaffView(data: StaffDataModel){
+    func detailStaffView(data: StaffData){
         for whiteTextField in view.subviews {
             if let textField = whiteTextField as? TextField {
                 textField.isEnabled = false
@@ -123,10 +123,6 @@ class NewStaffViewController: BaseViewController {
             }
         }
         if validationDepartment ?? false {
-            guard let salaryResult = presenter.departmentData.filter("department = '\(department)'").first?.salary,
-                  let salaryText = Int(salary),
-                  let salaryFull = Int(salaryResult) else { return }
-            let totalSalary = salaryText + salaryFull
             presenter.newStaff(numberStaff: numberStaff,
                                name: name,
                                lastName: lastName,
@@ -134,7 +130,7 @@ class NewStaffViewController: BaseViewController {
                                cellPhone: cellPhone,
                                salary: salary,
                                department: department)
-            presenter.editDepartment(deparment: department, salary: totalSalary.description)
+            presenter.newDepartment(department: department, salary: salary)
             dismiss(animated: true) {
                 self.delegate?.showSuccessFull()
             }

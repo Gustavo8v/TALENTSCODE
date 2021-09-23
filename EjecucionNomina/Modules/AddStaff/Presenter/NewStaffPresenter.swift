@@ -10,15 +10,15 @@ import RealmSwift
 
 class NewStaffPresenter{
     
-    var dataStaff: StaffData?
-    var dataDepartment: DepartmentsModel?
-    var staffData = try! Realm().objects(StaffData.self)
-    var departmentData = try! Realm().objects(DepartmentsModel.self)
+    let realm = try! Realm()
+    var dataStaff: StaffDataModel?
+    var dataDepartment: DepartmentsDataModel?
+    var staffData = try! Realm().objects(StaffDataModel.self)
+    var departmentData = try! Realm().objects(DepartmentsDataModel.self)
     
     func newStaff(numberStaff: String, name: String, lastName: String, address: String, cellPhone: String, salary: String, department: String){
-        let realm = try! Realm()
         try! realm.write{
-            let newFor = StaffData()
+            let newFor = StaffDataModel()
             newFor.numberStaff = numberStaff
             newFor.name = name
             newFor.lastName = lastName
@@ -31,13 +31,20 @@ class NewStaffPresenter{
         }
     }
     
-    func newDepartment(department: String){
-        let realm = try! Realm()
+    func newDepartment(department: String, salary: String){
         try! realm.write{
-            let newFor = DepartmentsModel()
+            let newFor = DepartmentsDataModel()
             newFor.department = department
+            newFor.salary = salary
             realm.add(newFor)
             dataDepartment = newFor
+        }
+    }
+    
+    func editDepartment(deparment: String, salary: String){
+        let editDepartment = departmentData.filter("department == '\(deparment)'").first
+        try! realm.write{
+            editDepartment?.salary = salary
         }
     }
 }

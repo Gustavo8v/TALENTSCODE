@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import RealmSwift
 
-class DepartmentsDataModel: Object{
+class DepartmentsModel: Object{
     @objc dynamic var department = ""
     @objc dynamic var salary = ""
 }

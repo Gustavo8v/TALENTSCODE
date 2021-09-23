@@ -18,7 +18,7 @@ class StaffDetailTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func configure(data: StaffData){
+    func configure(data: StaffDataModel){
         nameStaff.text = data.name
         numberStaff.text = data.numberStaff
     }

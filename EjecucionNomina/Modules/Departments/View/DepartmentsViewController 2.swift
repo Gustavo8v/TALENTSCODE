@@ -36,15 +36,9 @@ extension DepartmentsViewController: UITableViewDelegate, UITableViewDataSource 
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "myCell")
         let indexDeparment = presenter.departmentData[indexPath.row]
         cell.textLabel?.text = indexDeparment.department
-        cell.detailTextLabel?.text = "Salario total quincenal: $\(indexDeparment.salary)"
+        cell.detailTextLabel?.text = indexDeparment.salary
         cell.selectionStyle = .none
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-            guard editingStyle == .delete else { return }
-        let dataIndex = presenter.departmentData[indexPath.row]
-            self.presenter.deleteDepartment(staff: dataIndex, table: tableView)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
