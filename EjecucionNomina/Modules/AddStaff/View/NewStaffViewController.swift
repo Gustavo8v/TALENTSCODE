@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import Material
 
 class NewStaffViewController: BaseViewController {
-
+    
+    var presenter = NewStaffPresenter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareUI()

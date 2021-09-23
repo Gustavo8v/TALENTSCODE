@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import RealmSwift
 
 class StaffViewController: BaseViewController {
+    
+    var staffData = try! Realm().objects(StaffData.self)
 
     override func viewDidLoad() {
         super.viewDidLoad()

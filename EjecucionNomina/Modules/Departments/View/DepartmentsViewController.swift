@@ -8,7 +8,9 @@
 import UIKit
 
 class DepartmentsViewController: BaseViewController {
-
+    
+    @IBOutlet weak var departmentsTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareUI()

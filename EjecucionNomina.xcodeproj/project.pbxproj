@@ -18,6 +18,8 @@
 		72DEECC626FBBBB700BA46F6 /* StaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DEECC426FBBBB700BA46F6 /* StaffViewController.xib */; };
 		72DEECC926FBBBC700BA46F6 /* NewStaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEECC726FBBBC700BA46F6 /* NewStaffViewController.swift */; };
 		72DEECCA26FBBBC700BA46F6 /* NewStaffViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DEECC826FBBBC700BA46F6 /* NewStaffViewController.xib */; };
+		72DEECCD26FBF64A00BA46F6 /* StaffData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEECCC26FBF64A00BA46F6 /* StaffData.swift */; };
+		72DEECCF26FBFBC300BA46F6 /* NewStaffPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DEECCE26FBFBC300BA46F6 /* NewStaffPresenter.swift */; };
 		72FB805626FB86FF00ED03B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB805526FB86FF00ED03B5 /* AppDelegate.swift */; };
 		72FB805826FB86FF00ED03B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB805726FB86FF00ED03B5 /* SceneDelegate.swift */; };
 		72FB805A26FB86FF00ED03B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FB805926FB86FF00ED03B5 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 		72DEECC426FBBBB700BA46F6 /* StaffViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaffViewController.xib; sourceTree = "<group>"; };
 		72DEECC726FBBBC700BA46F6 /* NewStaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStaffViewController.swift; sourceTree = "<group>"; };
 		72DEECC826FBBBC700BA46F6 /* NewStaffViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewStaffViewController.xib; sourceTree = "<group>"; };
+		72DEECCC26FBF64A00BA46F6 /* StaffData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffData.swift; sourceTree = "<group>"; };
+		72DEECCE26FBFBC300BA46F6 /* NewStaffPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStaffPresenter.swift; sourceTree = "<group>"; };
 		72FB805226FB86FF00ED03B5 /* EjecucionNomina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjecucionNomina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FB805526FB86FF00ED03B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72FB805726FB86FF00ED03B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 		72DEECA826FB9AC200BA46F6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				72DEECCB26FBF63200BA46F6 /* Model */,
 				72DEECB826FBBAFB00BA46F6 /* AddStaff */,
 				72DEECB726FBBAF200BA46F6 /* Staff */,
 				72DEECB626FBBAE100BA46F6 /* Departments */,
@@ -185,6 +190,7 @@
 		72DEECBD26FBBB5100BA46F6 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				72DEECCE26FBFBC300BA46F6 /* NewStaffPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -196,6 +202,14 @@
 				72DEECC826FBBBC700BA46F6 /* NewStaffViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		72DEECCB26FBF63200BA46F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72DEECCC26FBF64A00BA46F6 /* StaffData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		72FB804926FB86FF00ED03B5 = {
@@ -364,9 +378,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				72FB805A26FB86FF00ED03B5 /* ViewController.swift in Sources */,
+				72DEECCF26FBFBC300BA46F6 /* NewStaffPresenter.swift in Sources */,
 				72DEECC926FBBBC700BA46F6 /* NewStaffViewController.swift in Sources */,
 				72DEECB226FBB8EB00BA46F6 /* UIButtonExtension.swift in Sources */,
 				72FB805626FB86FF00ED03B5 /* AppDelegate.swift in Sources */,
+				72DEECCD26FBF64A00BA46F6 /* StaffData.swift in Sources */,
 				72FB805826FB86FF00ED03B5 /* SceneDelegate.swift in Sources */,
 				72DEECAE26FB9B0D00BA46F6 /* HomeViewController.swift in Sources */,
 				72DEECC126FBBBA800BA46F6 /* DepartmentsViewController.swift in Sources */,
